@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EB5D0EAB-D978-4D3F-8F53-15125FE521CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FACF15A6-3C5B-4035-A796-F81ADF3CC9C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleObjectBuilder", "src\SimpleObjectBuilder\SimpleObjectBuilder.csproj", "{3A3D1A8E-E875-4BA0-98A1-785F79FE4B5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleObjectBuilder.Facts", "test\SimpleObjectBuilder.Facts\SimpleObjectBuilder.Facts.csproj", "{2BEC08A9-F053-44F8-A554-FD2279C880F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A3D1A8E-E875-4BA0-98A1-785F79FE4B5D} = {EB5D0EAB-D978-4D3F-8F53-15125FE521CB}
+		{2BEC08A9-F053-44F8-A554-FD2279C880F6} = {FACF15A6-3C5B-4035-A796-F81ADF3CC9C0}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A3D1A8E-E875-4BA0-98A1-785F79FE4B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A3D1A8E-E875-4BA0-98A1-785F79FE4B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A3D1A8E-E875-4BA0-98A1-785F79FE4B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A3D1A8E-E875-4BA0-98A1-785F79FE4B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BEC08A9-F053-44F8-A554-FD2279C880F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BEC08A9-F053-44F8-A554-FD2279C880F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BEC08A9-F053-44F8-A554-FD2279C880F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BEC08A9-F053-44F8-A554-FD2279C880F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

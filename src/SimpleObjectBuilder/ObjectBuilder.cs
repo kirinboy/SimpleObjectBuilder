@@ -15,7 +15,10 @@ namespace SimpleObjectBuilder
 
         public ObjectBuilder<TObject> With<TPropertyType>(Expression<Func<TObject, TPropertyType>> propertySelector, TPropertyType value)
         {
-            var memberExpression = propertySelector.Body as MemberExpression;
+            if (!(propertySelector.Body is MemberExpression memberExpression))
+            {
+                throw new ArgumentException(nameof(propertySelector));
+            }
             var propertyInfo = memberExpression.Member as PropertyInfo;
             propertyInfo.SetValue(obj, value);
 

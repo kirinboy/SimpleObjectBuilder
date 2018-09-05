@@ -15,6 +15,15 @@ namespace SimpleObjectBuilder.Facts
         }
 
         [Fact]
+        public void should_set_field_value_when_call_with_method()
+        {
+            var objectBuilder = new ObjectBuilder<Person>();
+            objectBuilder.With(_ => _.Age, 18);
+            var actualPerson = objectBuilder.Build();
+            Assert.Equal(18, actualPerson.Age);
+        }
+
+        [Fact]
         public void should_throw_argument_exception_when_expression_is_not_a_member_expression()
         {
             var objectBuilder = new ObjectBuilder<Person>();

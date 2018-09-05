@@ -19,8 +19,16 @@ namespace SimpleObjectBuilder
             {
                 throw new ArgumentException(nameof(propertySelector));
             }
-            var propertyInfo = memberExpression.Member as PropertyInfo;
-            propertyInfo.SetValue(obj, value);
+
+            switch (memberExpression.Member)
+            {
+                case PropertyInfo propertyInfo:
+                    propertyInfo.SetValue(obj, value);
+                    break;
+                case FieldInfo fieldInfo:
+                    fieldInfo.SetValue(obj, value);
+                    break;
+            }
 
             return this;
         }
